@@ -1,0 +1,25 @@
+class Rectangle 
+{
+	public int l;
+	public double w;
+	public Rectangle(int a , double b)
+	{
+		 l = a;
+		 w = b;
+	}
+	public void printArea()
+	{
+		double area = l*w;
+		System.out.println("Rectangle of dimension " +l+ " X " +w+ " is " +area);
+	}
+		
+	public static void main(String[] args) 
+	{
+		Rectangle r1 = new Rectangle(5 , 4.3);
+		Rectangle r2 = new Rectangle(7 , 2.1);
+		Rectangle r3 = new Rectangle(4 , 3.6);
+		r1.printArea();
+		r2.printArea();
+		r3.printArea();
+	}
+}
